@@ -1,0 +1,15 @@
+html
+    head
+        meta(name="vievport" content="width=device-width, initial-scale=1.0" )
+        title Start page (ExpressJS Pug template)
+        link(rel='stylesheet', href='style.css')
+    body
+        include ./header.pug
+        
+        section
+            h2 Hello, Stranger!
+            p Please, log in to continue
+            button.login
+                a(href="/login") Log in
+
+        include ./footer.pug
