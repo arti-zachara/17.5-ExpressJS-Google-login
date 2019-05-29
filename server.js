@@ -1,3 +1,5 @@
+"use strict";
+
 var express = require("express");
 var passport = require("passport"); // middleware
 var GoogleStrategy = require("passport-google-oauth").OAuth2Strategy;
