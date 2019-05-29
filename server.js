@@ -3,7 +3,7 @@
 var express = require("express");
 var passport = require("passport"); // middleware
 var GoogleStrategy = require("passport-google-oauth").OAuth2Strategy;
-var config = require("./config");
+var dotenv = require("dotenv").config(); // dotenv
 // ------------- requirements
 
 var app = express();
@@ -30,9 +30,9 @@ passport.deserializeUser(function(obj, done) {
 passport.use(
   new GoogleStrategy(
     {
-      clientID: config.GOOGLE_CLIENT_ID,
-      clientSecret: config.GOOGLE_CLIENT_SECRET,
-      callbackURL: config.CALLBACK_URL
+      clientID: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      callbackURL: process.env.CALLBACK_URL
     },
     function(accessToken, refreshToken, profile, cb) {
       googleProfile = {
