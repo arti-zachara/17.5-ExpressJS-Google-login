@@ -9,8 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arti-zachara/17.5-ExpressJS-Google-login.git",
-    "start": "nodemon server.js"
+    "url": "git+https://github.com/arti-zachara/17.5-ExpressJS-Google-login.git"
   },
   "keywords": [
     "ExpressJS",
