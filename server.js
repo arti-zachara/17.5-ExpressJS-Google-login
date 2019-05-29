@@ -50,7 +50,6 @@ app.get("/", function(req, res) {
 });
 app.get("/logged", function(req, res) {
   res.render("logged.pug", { user: googleProfile });
-  console.log(googleProfile);
 });
 
 // ----- Passport routes
@@ -68,16 +67,16 @@ app.get(
   })
 );
 
-// ----- server
-var server = app.listen(3000, "localhost", function() {
-  var host = server.address().address;
-  var port = server.address().port;
-  console.log("App listening on http://" + host + ":" + port);
-});
-
 // ------ handling 404
 app.use(function(req, res, next) {
   res
     .status(404)
     .send("Not what you've been looking for but still I love U 3000");
+});
+
+// ----- server ------------------------------------------------------------------
+var server = app.listen(3000, "localhost", function() {
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log("App listening on http://" + host + ":" + port);
 });
