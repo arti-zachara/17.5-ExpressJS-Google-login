@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 20vh;
+  width: 100vw;
+  background-color: black;
+  text-align: center;
+  color: lightgoldenrodyellow;
+  padding: 20px 0;
+}
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: black;
+  text-align: center;
+  color: lightgoldenrodyellow;
+  padding: 10px 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 70vh;
+  width: 100vw;
+  padding: 10px;
+  background-color: lightgoldenrodyellow;
+}
+
+p,
+h1,
+h2 {
+  margin: 0 auto;
+  text-align: center;
+  margin: 10px;
+}
+
+form {
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+form div {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+input {
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+button {
+  display: inline-block;
+  float: right;
+  margin: 20px 20px 20px 0;
+  width: 80px;
+  padding: 5px 0;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid lightskyblue;
+  background-color: white;
+  cursor: pointer;
+}
+
+button,
+a {
+  transition-duration: 0.2s;
+}
+
+a {
+  text-decoration: none;
+}
+a:focus,
+a:visited {
+  outline: none;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  background-color: lightskyblue;
+  color: white;
+}

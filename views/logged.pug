@@ -1,0 +1,13 @@
+html
+    head
+        meta(name="vievport" content="width=device-width, initial-scale=1.0" )
+        title Login page (ExpressJS Pug template)
+        link(rel='stylesheet', href='../style.css')
+    body
+        include ./header.pug
+
+        section
+            h2 Hello, #{user.displayName}
+            p You have successfully logged into your "account"
+        
+        include ./footer.pug
